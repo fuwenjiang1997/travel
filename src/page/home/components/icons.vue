@@ -167,6 +167,8 @@ export default {
     padding-bottom 40%
   .icons
     margin-top: .2rem
+    padding-right .1rem
+    padding-left .1rem
     .icon
       position relative
       float left

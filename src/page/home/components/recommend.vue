@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="recommend-title">热销推荐</div>
-    <ul>
+    <ul class="recommend-area">
       <li class="item" v-for = "(recommend, index) of recommendList" :key="index">
         <img class="item-img" :src="recommend.imgUrl">
         <div class="item-info">
@@ -52,35 +52,38 @@ export default {
     line-height .8rem
     background #eee
     text-indent .2rem
-  .item
-    display flex
-    overflow hidden
-    height 1.9rem
-    border-bottom 1px solid #ccc
-    .item-img
-      min-width 1.7rem
-      width 1.7rem
-      height 1.7rem
-      padding .1rem
-    .item-info
-      flex 1
-      min-width 0
-      .item-title
-        line-height .54rem
-        font-size .32rem
-        ellipsis()
-      .item-desc
-        display block
-        line-height .4rem
-        color $darkTextColor
-        ellipsis()
-      .item-button
-        margin-top .2rem
-        line-height .44rem
-        background #ff9300
-        padding 0 .2rem
-        border-radius .06rem
-        color #fff
-    &:last-child
-      border-bottom none
+  .recommend-area
+    padding-right .1rem
+    padding-left .1rem
+    .item
+      display flex
+      overflow hidden
+      height 1.9rem
+      border-bottom 1px solid #ccc
+      .item-img
+        min-width 1.7rem
+        width 1.7rem
+        height 1.7rem
+        padding .1rem
+      .item-info
+        flex 1
+        min-width 0
+        .item-title
+          line-height .54rem
+          font-size .32rem
+          ellipsis()
+        .item-desc
+          display block
+          line-height .4rem
+          color $darkTextColor
+          ellipsis()
+        .item-button
+          margin-top .2rem
+          line-height .44rem
+          background #ff9300
+          padding 0 .2rem
+          border-radius .06rem
+          color #fff
+      &:last-child
+        border-bottom none
 </style>
