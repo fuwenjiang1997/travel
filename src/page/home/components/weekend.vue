@@ -55,9 +55,9 @@ export default {
         height 0
         padding-bottom 39%
         .item-img
-          margin-bottom .2rem
+          margin-bottom .15rem
           width 100%
-          border-radius .3rem
+          border-radius .2rem
           overflow hidden
       .desc-area
         .title
