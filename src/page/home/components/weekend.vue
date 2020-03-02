@@ -2,7 +2,7 @@
   <div>
     <div class="weekend-title">周末去哪儿</div>
     <ul class="area">
-      <li class="item" v-for="(item, index) of list" :key="index">
+      <li class="item" v-for="(item, index) of weekendList" :key="index">
         <div class="img-wrapper">
           <img class="item-img" :src="item.imgUrl">
         </div>
@@ -20,27 +20,14 @@ export default {
   name: 'weekend',
   data () {
     return {
-      list: [{
-        id: 1,
-        imgUrl: require('@/assets/imgs/recommend/recommend1.jpg'),
-        title: '欢乐游乐场',
-        desc: '情侣，小孩的欢乐场所，放假了，来这里享受你的美好周末吧'
-      }, {
-        id: 2,
-        imgUrl: require('@/assets/imgs/recommend/recommend2.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }, {
-        id: 3,
-        imgUrl: require('@/assets/imgs/recommend/recommend3.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }, {
-        id: 4,
-        imgUrl: require('@/assets/imgs/recommend/recommend4.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }]
+    }
+  },
+  props: {
+    weekendList: {
+      type: Array,
+      default () {
+        return []
+      }
     }
   }
 }
@@ -66,7 +53,7 @@ export default {
       .img-wrapper
         overflow hidden
         height 0
-        padding-bottom 70%
+        padding-bottom 39%
         .item-img
           margin-bottom .2rem
           width 100%

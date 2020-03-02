@@ -22,21 +22,15 @@ export default {
         autoplay: {
           delay: 3000
         }
-      },
-      swiperList: [{
-        id: 1,
-        imgUrl: require('@/assets/imgs/swiper1.jpg')
-      }, {
-        id: 2,
-        imgUrl: require('@/assets/imgs/swiper2.jpg')
-      }, {
-        id: 3,
-        imgUrl: require('@/assets/imgs/swiper3.jpg')
-      }, {
-        id: 4,
-        imgUrl: require('@/assets/imgs/swiper4.jpg')
       }
-      ]
+    }
+  },
+  props: {
+    swiperList: {
+      type: Array,
+      default () {
+        return []
+      }
     }
   }
 }

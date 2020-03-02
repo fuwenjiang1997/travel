@@ -19,27 +19,14 @@ export default {
   name: 'recommend',
   data () {
     return {
-      recommendList: [{
-        id: 1,
-        imgUrl: require('@/assets/imgs/recommend/recommend1.jpg'),
-        title: '欢乐游乐场',
-        desc: '情侣，小孩的欢乐场所，放假了，来这里享受你的美好周末吧'
-      }, {
-        id: 2,
-        imgUrl: require('@/assets/imgs/recommend/recommend2.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }, {
-        id: 3,
-        imgUrl: require('@/assets/imgs/recommend/recommend3.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }, {
-        id: 4,
-        imgUrl: require('@/assets/imgs/recommend/recommend4.jpg'),
-        title: '踏青预售 高端出c游',
-        desc: '清迈、普吉、廊曼、素万那普等机场及调查活动会尽快的回复'
-      }]
+    }
+  },
+  props: {
+    recommendList: {
+      type: Array,
+      default () {
+        return []
+      }
     }
   }
 }
