@@ -1,6 +1,6 @@
 <template>
   <div class="wapper">
-    <swiper :options="swiperOption" ref="mySwiper">
+    <swiper :options="swiperOption" ref="mySwiper" v-if="showSwiper">
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="sweiper-img" :src="item.imgUrl">
       </swiper-slide>
@@ -31,6 +31,11 @@ export default {
       default () {
         return []
       }
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.swiperList.length
     }
   }
 }

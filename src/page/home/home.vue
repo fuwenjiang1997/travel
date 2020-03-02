@@ -44,9 +44,8 @@ export default {
         this.iconList = data.iconList
         this.recommendList = data.recommendList
         this.weekendList = data.weekendList
-        console.log(this.weekendList)
       }).catch((res) => {
-        console.log(1)
+        console.log('获取数据失败')
       })
     }
   },
