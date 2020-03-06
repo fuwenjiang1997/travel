@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'icons',
+  name: 'Icons',
   data () {
     return {
       iconList: [{

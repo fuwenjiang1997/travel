@@ -10,16 +10,16 @@
 </template>
 
 <script>
-import HomeHeader from '@/page/home/components/header.vue'
-import HomeSwiper from '@/page/home/components/swiper.vue'
-import HomeIcons from '@/page/home/components/icons.vue'
-import HomeRecommend from '@/page/home/components/recommend.vue'
-import HomeWeekend from '@/page/home/components/weekend.vue'
-import HomeFooter from '@/page/footer/footer.vue'
+import HomeHeader from '@/page/home/components/Header.vue'
+import HomeSwiper from '@/page/home/components/Swiper.vue'
+import HomeIcons from '@/page/home/components/Icons.vue'
+import HomeRecommend from '@/page/home/components/Recommend.vue'
+import HomeWeekend from '@/page/home/components/Weekend.vue'
+import HomeFooter from '@/page/footer/Footer.vue'
 import axios from 'axios'
 
 export default {
-  name: 'home',
+  name: 'Home',
   data () {
     return {
       swiperList: [],
