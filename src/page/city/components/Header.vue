@@ -1,22 +1,14 @@
 <template>
-  <div>
-    <div class="header">城市选择
-      <router-link to="/">
-        <span class="iconfont icon-xiazai6 header-back"></span>
-      </router-link>
-    </div>
-    <city-search></city-search>
+  <div class="header">城市选择
+    <router-link to="/">
+      <span class="iconfont icon-xiazai6 header-back"></span>
+    </router-link>
   </div>
 </template>
 
 <script>
-import CitySearch from './Search'
-
 export default {
-  name: 'CityHeader',
-  components: {
-    CitySearch
-  }
+  name: 'CityHeader'
 }
 </script>
 
