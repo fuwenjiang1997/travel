@@ -2,29 +2,41 @@
   <div  class="list" ref="wrapper">
     <div>
       <div class="area">
-        <div class="title border-topbottom">
+        <div class="title">
           所在城市
         </div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">北京</div>
+            <div class="button">{{this.currentCity}}</div>
           </div>
         </div>
       </div>
       <div class="area">
-        <div class="title border-topbottom">
+        <div class="title">
           热门城市
         </div>
         <div class="button-list">
-          <div class="button-wrapper" v-for="hotCity in hotCities" :key="hotCity.id">
+          <div
+            class="button-wrapper"
+            v-for="hotCity in hotCities"
+            :key="hotCity.id"
+            @click="handleCityClick(hotCity.name)"
+          >
             <div class="button">{{hotCity.name}}</div>
           </div>
         </div>
       </div>
       <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
-        <div class="title border-topbottom">{{key}}</div>
+        <div class="title">{{key}}</div>
         <ul class="item-list">
-          <li class="item" v-for="city in item" :key="city.id">{{city.name}}</li>
+          <li
+            class="item"
+            v-for="city in item"
+            :key="city.id"
+            @click="handleCityClick(city.name)"
+          >
+            {{city.name}}
+          </li>
         </ul>
       </div>
     </div>
@@ -33,6 +45,7 @@
 
 <script>
 import BScroll from '@better-scroll/core'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'List',
@@ -41,9 +54,16 @@ export default {
     cities: Object,
     letter: String
   },
-  mounted () {
-    this.scroll = new BScroll(this.$refs['wrapper'], {
-      click: true
+  methods: {
+    handleCityClick (city) {
+      this.changeCity(city)
+      this.$router.push('/')
+    },
+    ...mapMutations(['changeCity'])
+  },
+  computed: {
+    ...mapState({
+      currentCity: 'city'
     })
   },
   watch: {
@@ -53,6 +73,11 @@ export default {
         this.scroll.scrollToElement(element)
       }
     }
+  },
+  mounted () {
+    this.scroll = new BScroll(this.$refs['wrapper'], {
+      click: true
+    })
   }
 }
 </script>
