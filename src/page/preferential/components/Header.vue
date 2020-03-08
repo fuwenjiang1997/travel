@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-header">
+  <div class="preferential-header">
     <div class="bg" :style="opacityStyle"></div>
     <router-link to="/">
       <div class="header-left">
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'DetailHeader',
+  name: 'PreferentialHeader',
   data () {
     return {
       opacityStyle: {
@@ -54,7 +54,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/varibles.styl'
-  .detail-header
+  .preferential-header
     position fixed
     top .08rem
     left 0

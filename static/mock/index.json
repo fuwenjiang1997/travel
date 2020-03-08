@@ -3,10 +3,10 @@
   "data": {
     "swiperList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
+        "imgUrl": "https://img1.qunarzz.com/vs_ceph_vs_tts/40f15858-3e82-4c52-886c-67bff804dfb2.jpg_r_1280x840x95_fe4ee39a.jpg"
       },{
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg"
+        "imgUrl": "https://img1.qunarzz.com/vs_ceph_vs_tts/41316b12-530c-4b48-afea-ad876793b486.jpg_r_1280x840x95_b62cde31.jpg"
       },{
         "id": "0003",
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg"
@@ -51,57 +51,138 @@
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
         "desc": "一日游"
       }],
-    "recommendList": [{
-        "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-        "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
-      }, {
-        "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-        "title": "南山滑雪场",
-        "desc": "北京专业级滑雪圣地"
-      }, {
-        "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-        "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
-      }, {
-        "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-        "title": "水立方",
-        "desc": "中国的荣耀，阳光下的晶莹水滴"
-      }, {
-        "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
-        "title": "温都水城养生馆",
-        "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
-      }],
-    "weekendList": [{
-        "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
-        "title": "北京温泉排行榜",
-        "desc": "细数北京温泉，温暖你的冬天"
-      }, {
-        "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
-        "title": "北京必游TOP10",
-        "desc": "来北京必去的景点非这些地方莫属"
-      }, {
-        "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-        "title": "寻找北京的皇城范儿",
-        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
-      }, {
-        "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
-        "title": "学生最爱的博物馆",
-        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
-      }, {
-        "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
-        "title": "儿童剧场，孩子的乐园",
-        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
-      }]
+    "preference": {
+      "name": "今日特惠",
+      "iconfont": "",
+      "list": [{
+      "id": 1,
+      "title": "重庆-芽庄 5天跟团游",
+      "desc": "春节精选 芽庄+珍珠岛",
+      "price": 1700,
+      "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/f006a01a-b9d5-4ba5-af8b-f1668daebc21.jpg_r_480x320x90_3d608fae.jpg"
+    }, {
+      "id": 2,
+      "title": "重庆-吉普岛 6天跟团游",
+      "desc": "踏青预售 芽庄+珍珠岛",
+      "price": 3500,
+      "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/8d89217f-fbcb-4273-9354-84a326e94e20.jpg_r_480x320x90_73212ddc.jpg"
+    }, {
+      "id": 3,
+      "title": "成都-芽庄 5天跟团游",
+      "desc": "春节精选 芽庄+珍珠岛",
+      "price": 1924,
+      "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/bec3c458-c53a-474f-82c6-b7947267fb86.jpg_r_480x320x90_cd5bdbdb.jpg"
+    }, {
+      "id": 4,
+      "title": "重庆-新加坡 6天跟团游",
+      "desc": "初遇 新加坡+民丹岛 ",
+      "price": 2209,
+      "img": "https://imgs.qunarzz.com/vs_ceph_vs_tts/e71f1630-0214-483e-9a05-aab50ba1418e.jpg_r_480x320x90_d58f2c71.jpg"
+    }]},
+    "tickets": {
+      "name": "特价门票",
+      "iconfont": "icon-scenery",
+      "list": [{
+      "id": 1,
+      "title": "峨眉山",
+      "desc": "云上金顶，天下峨眉",
+      "price": 0.1,
+      "img": "https://img1.qunarzz.com/sight/p0/1712/16/16dd785ae3e2447ba3.img.jpg_256x160_78063187.jpg"
+    }, {
+      "id": 2,
+      "title": "毕棚沟",
+      "desc": "知名的红叶观赏圣地，成都西北伊甸园",
+      "price": 100,
+      "img": "https://img1.qunarzz.com/sight/p0/1505/c7/c77ffdc12cfba81d.water.jpg_256x160_c4a898ec.jpg"
+    }, {
+      "id": 3,
+      "title": "成都大熊猫繁育研究基地",
+      "desc": "无关黑与白，不分胖与瘦，可爱而又温暖",
+      "price": 18.31,
+      "img": "https://img1.qunarzz.com/sight/p0/201309/24/977fea7b3c5cd758c8d65eac.jpg_256x160_385b18c5.jpg"
+    }, {
+      "id": 4,
+      "title": "西岭雪山",
+      "desc": "",
+      "price": 180,
+      "img": "https://img1.qunarzz.com/sight/p0/2002/2b/2b10f0092d2f70a4a3.img.png_256x160_fb4161aa.png"
+    }, {
+      "id": 5,
+      "title": "国色天香-陆地乐园",
+      "desc": "来这里体验惊险刺激",
+      "price": 65,
+      "img": "https://img1.qunarzz.com/sight/p0/1704/a5/a59677101e07d38a3.img.jpg_256x160_b5c95bf9.jpg"
+    }, {
+      "id": 6,
+      "title": "乐山大佛",
+      "desc": "摩崖石刻造像",
+      "price": 0.5,
+      "img": "https://img1.qunarzz.com/sight/p0/201305/08/c5c262c16bebca42c8d65eac.jpg_256x160_c1d50c65.jpg"
+    }, {
+      "id": 7,
+      "title": "都江堰",
+      "desc": "感受都江堰水利工程的古人的智慧",
+      "price": 40,
+      "img": "https://img1.qunarzz.com/sight/p0/201407/03/a584374ee80b738e2600d6bcaf1299e3.jpg_256x160_e2649452.jpg"
+    }, {
+      "id": 8,
+      "title": "蔚然花海",
+      "desc": "大地艺术花田",
+      "price": 55,
+      "img": "https://img1.qunarzz.com/sight/p0/1905/e1/e142f2d046ac3d45a3.img.png_256x160_0e07b6b6.png"
+    }]},
+    "popular": {
+      "name": "当季热门度假",
+      "iconfont": "icon-swticonlvyou",
+      "list": [
+      {
+      "id": 1,
+      "title": "含往返飞机票+3晚住宿",
+      "desc": "",
+      "price": 4372,
+      "img": "https://imgs.qunarzz.com/p/p70/1809/e7/4941057a6aae702.jpg_256x160_9fee6ccb.jpg"
+    }, {
+      "id": 2,
+      "title": "含往返飞机票+5晚住宿",
+      "desc": "",
+      "price": 1966,
+      "img": "https://imgs.qunarzz.com/p/p66/201304/17/384810d022dd28f793835fbb.jpg_256x160_6a7ec251.jpg"
+    }, {
+      "id": 3,
+      "title": "含往返飞机票+5晚住宿",
+      "desc": "",
+      "price": 2408,
+      "img": "https://imgs.qunarzz.com/p/p48/201302/28/bc44faa497db0dcf93835fbb.jpg_256x160_0ba13461.jpg"
+    }, {
+      "id": 4,
+      "title": "含往返飞机票+3晚住宿",
+      "desc": "",
+      "price": 2225,
+      "img": "https://imgs.qunarzz.com/p/p18/201302/28/a5b5020f04389deb93835fbb.jpg_256x160_823f4658.jpg"
+    }, {
+      "id": 5,
+      "title": "含往返飞机票+4晚住宿",
+      "desc": "",
+      "price": 2226,
+      "img": "https://imgs.qunarzz.com/p/p27/201302/28/d14185ac8a47f6f993835fbb.jpg_256x160_c2ab9336.jpg"
+    }, {
+      "id": 6,
+      "title": "含单程飞机票单程火车票",
+      "desc": "",
+      "price": 3480,
+      "img": "https://imgs.qunarzz.com/p/p97/1512/73/97da2a9e39df59f7.jpg_256x160_acb41adf.jpg"
+    }, {
+      "id": 7,
+      "title": "含往返飞机票+7晚住宿",
+      "desc": "",
+      "price": 11071,
+      "img": "https://imgs.qunarzz.com/p/p49/201302/28/f7876853b1e2279d93835fbb.jpg_256x160_a7c2c4f7.jpg"
+    }, {
+      "id": 8,
+      "title": "含往返飞机票(不含税)+3晚住宿",
+      "desc": "",
+      "price": 4680,
+      "img": "https://imgs.qunarzz.com/p/p87/201302/28/1b8aa3e47c641db693835fbb.jpg_256x160_f035bc45.jpg"
+    }]}
   }
 }

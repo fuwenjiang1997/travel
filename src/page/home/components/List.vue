@@ -1,14 +1,21 @@
 <template>
   <div>
-    <div class="weekend-title">周末去哪儿</div>
+    <div class="weekend-title">
+      <span v-if="hasIconfont" class="iconfont" :class="hasIconfont"></span>
+      {{lists.name}}
+    </div>
     <ul class="area">
-      <li class="item" v-for="(item, index) of weekendList" :key="index">
+      <li class="item" v-for="(item, index) of lists.list" :key="index">
         <div class="img-wrapper">
-          <img class="item-img" :src="item.imgUrl">
+          <img class="item-img" :src="item.img">
         </div>
         <div class="desc-area">
           <div class="title">{{item.title}}</div>
           <p class="des">{{item.desc}}</p>
+          <div v-if="item.price" class="price">
+            <span class="iconfont icon-renminbi"></span>
+            {{item.price}}
+          </div>
         </div>
       </li>
     </ul>
@@ -17,16 +24,21 @@
 
 <script>
 export default {
-  name: 'Weekend',
+  name: 'HomeList',
   data () {
     return {
     }
   },
+  computed: {
+    hasIconfont () {
+      return this.lists.iconfont || false
+    }
+  },
   props: {
-    weekendList: {
-      type: Array,
+    lists: {
+      type: Object,
       default () {
-        return []
+        return {}
       }
     }
   }
@@ -53,7 +65,7 @@ export default {
       .img-wrapper
         overflow hidden
         height 0
-        padding-bottom 39%
+        padding-bottom 70%
         .item-img
           margin-bottom .15rem
           width 100%
@@ -71,4 +83,8 @@ export default {
           line-height .4rem
           color #999
           ellipsis()
+        .price
+          font-size .38rem
+          font-weight 550
+          color: #ff7400
 </style>
