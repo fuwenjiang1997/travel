@@ -159,7 +159,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-  @import '~styles/varbles.styl'
+  @import '~styles/varibles.styl'
   @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     overflow hidden
