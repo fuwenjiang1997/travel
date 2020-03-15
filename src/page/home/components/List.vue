@@ -5,7 +5,8 @@
       {{lists.name}}
     </div>
     <ul class="area">
-      <li class="item" v-for="(item, index) of lists.list" :key="index">
+      <li class="item" v-for="item of lists.list" :key="item.id">
+        <router-link :to="'/preferential/' + item.id">
         <div class="img-wrapper">
           <img class="item-img" :src="item.img">
         </div>
@@ -17,6 +18,7 @@
             {{item.price}}
           </div>
         </div>
+        </router-link>
       </li>
     </ul>
   </div>
