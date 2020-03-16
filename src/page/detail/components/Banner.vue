@@ -31,10 +31,11 @@ export default {
   name: 'PreferentialBanner',
   data () {
     return {
-      showGallary: false,
-      imgs: ['https://imgs.qunarzz.com/vs_ceph_vs_tts/8d89217f-fbcb-4273-9354-84a326e94e20.jpg_r_390x260x95_f8ae5345.jpg',
-        'https://imgs.qunarzz.com/vs_ceph_vs_tts/40f15858-3e82-4c52-886c-67bff804dfb2.jpg_r_390x260x95_3d4d4343.jpg']
+      showGallary: false
     }
+  },
+  props: {
+    imgs: Array
   },
   methods: {
     handleBallayClick () {

@@ -57,7 +57,10 @@ export default {
         background linear-gradient(to right, #FF554C, #FF7F57)
       .txt
         display inline-block
-        color #FFA0A3
+        font-size .2rem
+        padding .06rem .2rem
+        border-radius .06rem
+        color #ff4348
         background #FFF0F0
     .content
       padding-bottom .2rem
