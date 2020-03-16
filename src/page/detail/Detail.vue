@@ -5,7 +5,11 @@
     <detail-remind></detail-remind>
     <div class="content">
 <!--      <detail-list :list="list"></detail-list>-->
-      <detail-simple :price="1930"></detail-simple>
+      <detail-simple
+        :price="1930"
+        :listDiscount="listDiscount"
+        :listOther = "listOther"
+      ></detail-simple>
     </div>
   </div>
 </template>
@@ -18,6 +22,27 @@ import DetailSimple from './components/Simple'
 
 export default {
   name: 'Detail',
+  data () {
+    return {
+      listDiscount: [{
+        id: 1,
+        desc: '现金红包'
+      }, {
+        id: 2,
+        desc: '专享红包'
+      }, {
+        id: 3,
+        desc: '代金劵'
+      }],
+      listOther: [{
+        id: 1,
+        desc: '舒适游'
+      }, {
+        id: 2,
+        desc: '二次确认'
+      }]
+    }
+  },
   components: {
     DetailBanner,
     DetailHeader,
