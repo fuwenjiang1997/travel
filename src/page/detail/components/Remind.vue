@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'remind',
+  name: 'Remind',
   data () {
     return {
       desc: '自1月31日起，暂停给两周在中国生活的外国人签发旅游签证；暂停中越间往返航班；暂停办理经东兴-芒街口岸出入境的人员手续。'

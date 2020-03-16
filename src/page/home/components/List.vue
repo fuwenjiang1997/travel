@@ -13,10 +13,7 @@
         <div class="desc-area">
           <div class="title">{{item.title}}</div>
           <p class="des">{{item.desc}}</p>
-          <div v-if="item.price" class="price">
-            <span class="iconfont icon-renminbi"></span>
-            {{item.price}}
-          </div>
+          <home-price v-if="item.price" :price="item.price" />
         </div>
         </router-link>
       </li>
@@ -25,6 +22,8 @@
 </template>
 
 <script>
+import HomePrice from '@/common/price/Price'
+
 export default {
   name: 'HomeList',
   data () {
@@ -43,6 +42,9 @@ export default {
         return {}
       }
     }
+  },
+  components: {
+    HomePrice
   }
 }
 </script>

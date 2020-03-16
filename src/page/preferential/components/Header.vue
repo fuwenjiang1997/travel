@@ -3,16 +3,16 @@
     <div class="bg" :style="opacityStyle"></div>
     <router-link to="/">
       <div class="header-left">
-        <div class="box-circle" v-bind:class="{bfColor: !opacityStyle.opacity}">
+        <div class="box-circle" :class="{bfColor: !opacityStyle.opacity}">
           <span class="iconfont icon-xiazai6 iconfont-size"></span>
         </div>
       </div>
     </router-link>
     <div class="header-right">
-      <div class="box-circle" v-bind:class="{bfColor: !opacityStyle.opacity}">
+      <div class="box-circle" :class="{bfColor: !opacityStyle.opacity}">
         <span class="iconfont icon-icon-test iconfont-size" ></span>
       </div>
-      <div class="box-circle" v-bind:class="{bfColor: !opacityStyle.opacity}">
+      <div class="box-circle" :class="{bfColor: !opacityStyle.opacity}">
         <span class="iconfont icon-shenglvehao iconfont-size" ></span>
       </div>
     </div>

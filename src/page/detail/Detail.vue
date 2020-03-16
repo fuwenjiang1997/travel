@@ -4,8 +4,8 @@
     <detail-banner />
     <detail-remind></detail-remind>
     <div class="content">
-      123
 <!--      <detail-list :list="list"></detail-list>-->
+      <detail-simple :price="1930"></detail-simple>
     </div>
   </div>
 </template>
@@ -13,14 +13,16 @@
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
-import DetailRemind from './components/remind'
+import DetailRemind from './components/Remind'
+import DetailSimple from './components/Simple'
 
 export default {
   name: 'Detail',
   components: {
     DetailBanner,
     DetailHeader,
-    DetailRemind
+    DetailRemind,
+    DetailSimple
   }
 }
 </script>
