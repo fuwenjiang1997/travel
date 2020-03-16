@@ -6,7 +6,7 @@
     </div>
     <ul class="area">
       <li class="item" v-for="item of lists.list" :key="item.id">
-        <router-link :to="'/preferential/' + item.id">
+        <router-link :to="'/detail/' + item.id">
         <div class="img-wrapper">
           <img class="item-img" :src="item.img">
         </div>

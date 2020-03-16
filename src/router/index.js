@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/page/home/Home.vue'
 import City from '@/page/city/City.vue'
-import Preferential from '@/page/preferential/Preferential.vue'
+import Detail from '@/page/detail/Detail.vue'
 
 Vue.use(Router)
 
@@ -16,8 +16,8 @@ export default new Router({
     name: 'City',
     component: City
   }, {
-    path: '/preferential/:id',
-    name: 'Preferential',
-    component: Preferential
+    path: '/detail/:id',
+    name: 'Detail',
+    component: Detail
   }]
 })
